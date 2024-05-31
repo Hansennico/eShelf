@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Author" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sypnosis" Type="text" Nullable="false" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="Rating" Type="float" Nullable="false" />
+    <Property Name="Genre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Publisher" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PublishDate" Type="date" Nullable="false" />
+    <Property Name="Cover" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SupplierID" Type="char" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="BookID" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="BookID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Catalog">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="QuantityPhysical" Type="int" Nullable="false" />
+    <Property Name="QuantityDigital" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PaymentMethod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RestockDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="BookID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="QuantityPhysical" Type="int" Nullable="false" />
+    <Property Name="QuantityDigital" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RestockHeader">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="RestockDate" Type="date" />
+  </EntityType>
+  <EntityType Name="Supplier">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="UserID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="TransactionDate" Type="date" />
+    <Property Name="PaymentMethodID" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="IsCheckout" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BillingAddress" Type="varchar" MaxLength="200" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="PostalCode" Type="int" />
+    <Property Name="State" Type="varchar" MaxLength="50" />
+    <Property Name="City" Type="varchar" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_Book_ToSupplier">
+    <End Role="Supplier" Type="Self.Supplier" Multiplicity="1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cart_ToBook">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cart_ToTransaction">
+    <End Role="Transaction" Type="Self.Transaction" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transaction">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Catalog_ToBook">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="Catalog" Type="Self.Catalog" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Catalog">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RestockDetail_ToBook">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="RestockDetail" Type="Self.RestockDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RestockDetail">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RestockDetail_ToRestockHeader">
+    <End Role="RestockHeader" Type="Self.RestockHeader" Multiplicity="1" />
+    <End Role="RestockDetail" Type="Self.RestockDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RestockHeader">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RestockDetail">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaction_ToPaymentMethod">
+    <End Role="PaymentMethod" Type="Self.PaymentMethod" Multiplicity="1" />
+    <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PaymentMethod">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="PaymentMethodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transaction_ToUser">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Transaction" Type="Self.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Catalog" EntityType="Self.Catalog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PaymentMethod" EntityType="Self.PaymentMethod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RestockDetail" EntityType="Self.RestockDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RestockHeader" EntityType="Self.RestockHeader" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Supplier" EntityType="Self.Supplier" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transaction" EntityType="Self.Transaction" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Book_ToSupplier" Association="Self.FK_Book_ToSupplier">
+      <End Role="Supplier" EntitySet="Supplier" />
+      <End Role="Book" EntitySet="Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cart_ToBook" Association="Self.FK_Cart_ToBook">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cart_ToTransaction" Association="Self.FK_Cart_ToTransaction">
+      <End Role="Transaction" EntitySet="Transaction" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Catalog_ToBook" Association="Self.FK_Catalog_ToBook">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="Catalog" EntitySet="Catalog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RestockDetail_ToBook" Association="Self.FK_RestockDetail_ToBook">
+      <End Role="Book" EntitySet="Book" />
+      <End Role="RestockDetail" EntitySet="RestockDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RestockDetail_ToRestockHeader" Association="Self.FK_RestockDetail_ToRestockHeader">
+      <End Role="RestockHeader" EntitySet="RestockHeader" />
+      <End Role="RestockDetail" EntitySet="RestockDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_ToPaymentMethod" Association="Self.FK_Transaction_ToPaymentMethod">
+      <End Role="PaymentMethod" EntitySet="PaymentMethod" />
+      <End Role="Transaction" EntitySet="Transaction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transaction_ToUser" Association="Self.FK_Transaction_ToUser">
+      <End Role="User" EntitySet="User" />
+      <End Role="Transaction" EntitySet="Transaction" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

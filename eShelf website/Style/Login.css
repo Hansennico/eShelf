@@ -1,0 +1,125 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-weight: 500;
+    font-style: normal;
+}
+
+#form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 244, 237);
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 25%;
+    padding-top:15px;
+    padding-bottom:30px;
+    border-radius: 10px;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+
+    #container img {
+        width: 40%;
+    }
+
+.input {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 80%;
+    margin: 3px;
+}
+
+.inputLabel {
+    font-size: 0.9em;
+}
+
+.inputTextBox {
+    height: 30px;
+    outline: none;
+    border: 2px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-family: "Poppins";
+    font-weight: 600;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.rememberBox {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    width: 80%;
+    margin: 3px;
+    margin-bottom: 20px;
+    font-size:0.9em;
+}
+
+#LBwelcome {
+    margin-bottom: 20px;
+    color: rgb(128, 116, 105);
+}
+
+#LBerror {
+    font-size: 0.85em;
+    color: red;
+}
+
+#BTNtoRegister {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: color 0.5s ease;
+    color: rgb(128, 116, 105);
+}
+
+    #BTNtoRegister:hover {
+        color: blue;
+        cursor: pointer;
+    }
+
+#BTNlogin {
+    height: 2.5em;
+    width: 55%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    font-family: "Poppins";
+    font-weight:500;
+    color: white;
+    background-color: black;
+    transition: background-color 0.5s ease;
+}
+
+    #BTNlogin:hover {
+        background-color: rgb(43, 43, 42);
+        cursor: pointer;
+    }
+
+    #BTNlogin:active {
+        background-color: rgb(64, 64, 62);
+    }

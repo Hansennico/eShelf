@@ -1,0 +1,186 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ContainerItem {
+    display: flex;
+    flex-direction: column;
+    /*width: 60%;*/
+    width: 50%;
+    min-width: 500px;
+}
+
+.ContainerAll {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+.ItemTitle {
+    width: 100%;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.ContainerBook {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.ContainerInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.InputTitle {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.InputTB {
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Poppins";
+    font-size: 0.8em;
+}
+
+.TBsypnosis {
+    height: 200px;
+    resize: none;
+}
+
+.ContainerDoubleInput {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.ContainerInput1 {
+    width: 60%;
+}
+
+.ContainerInput2 {
+    width: 35%;
+}
+
+.ContainerInput3 {
+    width: 45%;
+}
+
+
+.TitleExtra {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.4em;
+}
+
+.BTNinput {
+    width: 30%;
+    height: 2em;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: "Poppins";
+    transition: background-color 0.5s ease;
+}
+
+    .BTNinput:hover {
+        background-color: rgb(43, 43, 42);
+        cursor: pointer;
+    }
+
+.BTNcancel {
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease;
+}
+
+    .BTNcancel:hover {
+        background-color: rgba(173, 173, 173,0.2);
+    }
+
+.ContainerButton {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.TitleError {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: red;
+    font-weight: normal;
+    text-align: right;
+}
+
+.PNpopUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index:;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.ContainerPopUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 50%;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    background-color: rgb(247, 244, 237);
+    border: 15px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.PopUpTitle {
+    width: 80%;
+    text-align: center;
+}
+
+.ContainerPopUp img {
+    height: 50%;
+}
+
+.BTNclose {
+    width: 60%;
+    margin-top: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-family: "Poppins";
+    font-size: 1.2em;
+    transition: background-color 0.5s ease;
+}
+
+    .BTNclose:hover {
+        background-color: rgb(43, 43, 42);
+        cursor: pointer;
+    }

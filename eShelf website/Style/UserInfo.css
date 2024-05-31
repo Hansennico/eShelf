@@ -1,0 +1,108 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ContainerItem {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 45%;
+    border-radius: 5px;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-bottom:30px;
+}
+
+.Placeholder {
+    width: 20px;
+    min-width:20px;
+    height:100%;
+}
+
+.ContainerHeader {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ContainerTitle{
+    width:90%;
+    margin-top:15px;
+    margin-bottom:15px;
+    font-size:1.4em;
+    font-weight:bold;
+}
+
+.ContainerInfo{
+    width:90%;
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10px;
+}
+
+.InfoTitle{
+    font-weight:bold;
+    font-size:1em;
+}
+
+.InfoDetail{
+    font-size:0.8em;
+}
+
+.InfoAddress{
+    text-align:justify;
+}
+
+.ContainerInfoDouble{
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+}
+
+.ContainerInfo1 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.TransactionHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1em;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-weight:bold;
+    background-color: rgba(173, 173, 173,0.2);
+    margin-bottom:10px;
+}
+
+.TransactionDetail {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.tDate{
+    width:28%;
+    margin-left:5%;
+}
+
+.tMethod {
+    width: 23%;
+}
+
+.tAmount {
+    width: 33%;
+    margin-right: 5%;
+}
+
+.PNhistory{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}

@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="eShelf_website.View.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../Style/Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class ="ContainerNavBar">
+            <asp:Button ID="BTNhome" runat="server" Text="" OnClick="BTNhome_Click" />
+    
+            <div class="ContainerSearchBar" >
+                <asp:Button ID="BTNsearch" CssClass="BTNsearching" runat="server" OnClick="BTNsearch_Click" />
+                <asp:TextBox ID="TBsearchBar" runat="server" Placeholder="Search"></asp:TextBox>
+            </div>
+
+    
+            <asp:Button ID="BTNcart" CssClass="BTNnav" runat="server" OnClick="BTNcart_Click" />
+            <asp:Button ID="BTNinventory" CssClass="BTNnav" runat="server" OnClick="BTNinventory_Click" />
+            <asp:Button ID="BTNlogin" CssClass="BTNsession" runat="server" Text="Login" OnClick="BTNlogin_Click" />
+            <asp:Button ID="BTNregister" CssClass="BTNsession" runat="server" Text="Sign Up" OnClick="BTNregister_Click" />
+            <asp:Button ID="BTNaccount" runat="server" Text="Name" OnClick="BTNaccount_Click" />
+
+    
+        </div>
+
+
+        <!-- Only for placehoder Nav Bar, doesn't Do anything-->
+        <div class="PlaceholderNavBar"> </div>
+
+        <div class="ContainerContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1"  runat="server"></asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,122 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.ContainerItem {
+    display: flex;
+    flex-direction: column;
+    /*width: 60%;*/
+    width:100%;
+    min-width: 500px;
+}
+
+.ContainerPlaceholder {
+    min-width: 25px;
+}
+
+.ContainerSummary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    width: 35%;
+    border-radius: 5px;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ContainerHeader{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+
+.ItemTitle{
+    width:80%;
+    font-size: 1.7em;
+    font-weight:bold;
+}
+
+.BTNheader {
+    width: 10%;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-family: "Poppins";
+    transition: background-color 0.5s ease;
+}
+
+    .BTNheader:hover {
+        background-color: rgb(43, 43, 42);
+        cursor: pointer;
+    }
+
+.ContainerBook{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    width:100%;
+    margin-top:20px;
+    border:2px solid black;
+    border-radius:15px;
+    padding-bottom:15px;
+}
+
+.ContainerBookRow{
+    display:flex;
+    align-items: flex-start;
+    padding-top:5px;
+    padding-bottom:5px; 
+    width:100%; 
+    gap:10px;
+}
+
+.BookRowHeader {
+    background-color: black;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.CBbook {
+    width: 20px;
+    margin-left: 15px;
+}
+
+.BookInfo{
+    width:20%;
+    font-size:0.8em;
+}
+
+.BookHeader{
+    font-size:1em;
+}
+
+.PNbookItem{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.BTNbook {
+    text-decoration: none;
+    border-radius: 7px;
+    background-color:white;
+    transition: color 0.5s ease;
+}
+
+    .BTNbook:hover {
+        cursor: pointer;
+        color:black;
+    }
+
+.BTNbookRemove{
+    color:red; 
+}
+
+.BTNbookEdit{
+    color:dodgerblue;
+}

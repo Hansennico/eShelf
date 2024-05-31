@@ -1,0 +1,63 @@
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\eShelf website.dll.config
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\eShelf website.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\eShelf website.pdb
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\csc.exe
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\csc.exe.config
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\csc.rsp
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\csi.exe
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\csi.exe.config
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\csi.rsp
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.Managed.Core.targets
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.AppContext.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Collections.Immutable.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Console.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Globalization.Calendars.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.IO.Compression.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.IO.FileSystem.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Net.Http.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Net.Sockets.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Reflection.Metadata.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.ValueTuple.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Xml.XmlDocument.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Xml.XPath.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\vbc.exe
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\vbc.exe.config
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\vbc.rsp
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\VBCSCompiler.exe
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\roslyn\VBCSCompiler.exe.config
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\obj\Debug\eShelf website.csproj.AssemblyReference.cache
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\obj\Debug\eShelf website.csproj.CoreCompileInputs.cache
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\obj\Debug\eShelf w.D6E06F56.Up2Date
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\obj\Debug\eShelf website.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\obj\Debug\eShelf website.pdb
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\EntityFramework.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\EntityFramework.SqlServer.dll
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\EntityFramework.xml
+D:\School\Binus\sem 4\Software Engineering\AOL eShelf\eShelf2\eShelf website\eShelf website\bin\EntityFramework.SqlServer.xml
