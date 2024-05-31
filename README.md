@@ -8,8 +8,8 @@ From the business side, eShelf will have an inventory management system, where i
 
 ## Anggota Kelompok
 
-2602165221 - Michael Matthew Muliawan
-2602164710 - Rico Herald Cenniago
-2602165234 - Eric Jevon
-2602156160 - Kevin Ardi
+2602165221 - Michael Matthew Muliawan\
+2602164710 - Rico Herald Cenniago\
+2602165234 - Eric Jevon\
+2602156160 - Kevin Ardi\
 2602154230 - Nicolas Hansen
